@@ -4,10 +4,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .container div {
    max-width: 500px;
+   cursor: pointer;
    
 }
+#spinner{
+    display: none;
+    position:absolute;
+    
+}
+#results {
+  
+    display: none;
+ 
+}
+
 
 
 
@@ -27,5 +40,6 @@
   
     
 }
+
     
 } 
