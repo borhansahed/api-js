@@ -84,9 +84,9 @@ const displayResult = meals => {
    newDiv.classList.add('card-container');
     newDiv.innerHTML=`
     <div class="  col-12 mx-auto shadow-lg ">
-      <div class="card ">
+      <div class="card  ">
      <img src="${items.strMealThumb ? items.strMealThumb : 'coming soon'}" class="items card-img-top mx-auto mt-3" alt="...">
-     <div class="card-body ">
+     <div class="card-body  ">
       <h5 class="card-title">${items.strMeal}</h5>
       <p class="card-text">${items.strInstructions.slice(0 ,150)}</p>
       <a  href="${items.strYoutube}">Watch Now</a>

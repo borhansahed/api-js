@@ -63,6 +63,16 @@ input:focus {
         max-width: 400px;
         margin: 0px auto;
     }
+    #card-result p{
+      font-size: 15px;
+    }
+    #card-result h5{
+      font-size: 18px;
+    }
+    .card-body{
+        max-width: 300px;
+        margin: 0px auto;
+    }
     .card-container img{
         width: 23vh;
         
@@ -83,6 +93,11 @@ input:focus {
        display: flex;
        justify-content: center;
    }
+   .card-container a{
+   font-size: 14px;
+  
+    
+}
 
 
     
