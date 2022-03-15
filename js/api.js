@@ -39,10 +39,10 @@
 // }
 
 
-
+const noResults =  document.getElementById('results');
 
 const results = (result) => {
-  document.getElementById('results').style.display = result;
+ noResults.style.display = result;
   
 }
 
@@ -67,7 +67,7 @@ const searchFood = () => {
 }
 
 const displayResult = meals => {
-  
+  console.log(meals)
   if(!meals){
     results('block')
    toggoleSpiner('none')
@@ -79,17 +79,17 @@ const displayResult = meals => {
   //    console.log(items);
   //  })
   for(const items of meals){
-    console.log(items);
+    
     const newDiv = document.createElement('div');
    newDiv.classList.add('card-container');
     newDiv.innerHTML=`
-    <div class="  col w-75 h-25 mx-auto shadow-lg ">
+    <div class="  col-12 mx-auto shadow-lg ">
       <div class="card ">
-     <img src="${items.strMealThumb}" class="items card-img-top w-100 h-50 " alt="...">
+     <img src="${items.strMealThumb ? items.strMealThumb : 'coming soon'}" class="items card-img-top mx-auto mt-3" alt="...">
      <div class="card-body ">
       <h5 class="card-title">${items.strMeal}</h5>
       <p class="card-text">${items.strInstructions.slice(0 ,150)}</p>
-      <a href="${items.strYoutube}">Watch Now</a>
+      <a  href="${items.strYoutube}">Watch Now</a>
     </div> 
       
      
